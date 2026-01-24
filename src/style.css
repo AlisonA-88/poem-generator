@@ -27,14 +27,24 @@ header {
   margin-bottom: 30px;
 }
 
-form {
-  padding: 30px;
+.form-container {
   background-color: #e5beb5;
+  margin-bottom: 30px;
   border-radius: 20px;
+  padding: 30px;
+}
+
+.hint {
+  font-size: 14px;
+  color: #896c6c;
+  margin-top: 5px;
+  text-align: center;
+}
+
+form {
   max-width: 500px;
   margin: auto;
   display: flex;
-  margin-bottom: 30px;
 }
 
 .prompt {
@@ -70,7 +80,6 @@ form {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   max-width: 500px;
   margin: auto;
-  display: flex;
 }
 
 footer {
@@ -81,4 +90,22 @@ footer {
 
 .poem strong {
   color: #e5beb5;
+}
+
+.hidden {
+  display: none;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

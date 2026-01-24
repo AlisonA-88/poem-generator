@@ -14,8 +14,12 @@ function generatePoem(event) {
   let apiKey = "2da524bt368f04d046ed72d4c1o50bad";
   let prompt = `Generate a poem about ${instructionsInput.value}`;
   let context =
-    "You are an AI assistant that has an extensive knowledge of poems and creates your own 5 line short poems that always rhyme based on the topic given. Each line ends with the HTML < br />. Sign the poem with 'SheCodes AI' at the end of the poem in a <strong></strong> and <i></i> elements.";
+    "You are an AI assistant that has an extensive knowledge of poems and creates your own 5 line short poems that always rhyme based on the topic given. Each line ends with the HTML < br />. Sign the poem with 'SheCodes AI' at the end of the poem in a <strong><i></i></strong> elements.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class="generating">  Generating your poem about ${instructionsInput.value} ✍️ </div>`;
 
   console.log("Generating poem");
   console.log(`Prompt: ${prompt}`);
