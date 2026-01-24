@@ -7,30 +7,40 @@
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to the poem generator</h1>
-    </header>
-    <main>
-      <form>
-        <input type="text" placeholder="Enter the topic of the poem" autofocus required autocomplete="off"/>
-        <input type="Submit" />
-      </form>
-      <div id="poem">
-        The poem goes here <br />
-        Second line <br />
-        Third line <br //
-      </div>
-    </main>
+    <div class="container">
+      <header>
+        <h1>Welcome to the Poem Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of the poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="prompt"
+          />
+          <input type="Submit" class="submit-button" />
+        </form>
+        <div class="poem">
+          The poem goes here <br />
+          Second line <br />
+          Third line <br />
+        </div>
+      </main>
+
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/AlisonA-88" target="_blank">Alison A</a> and
+        is open-sourced on
+        <a href="https://github.com/AlisonA-88/poem-generator" target="_blank"
+          >GitHub</a
+        >
+        and is hosted on
+        <a href="https://aa-poem-generator.netlify.app/">Netlify</a>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
   </body>
-  <footer>
-    This AI project was coded by
-    <a href="https://github.com/AlisonA-88" target="_blank">Alison A</a> and is
-    open-sourced on
-    <a href="https://github.com/AlisonA-88/poem-generator" target="_blank"
-      >GitHub</a
-    >
-    and is hosted on
-    <a href="https://aa-poem-generator.netlify.app/">Netlify</a>
-  </footer>
-  <script src="src/index.js"></script>
 </html>
